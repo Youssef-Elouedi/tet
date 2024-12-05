@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+  <title>CRB100 Compresseur 2024-2025</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script type="module" src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="nav-brand">
+        <img src="./insat.png" alt="CRB100" height="40">
+      </div>
+      <div class="nav-links">
+        <a href="#presentation" aria-current="page">Présentation</a>
+        <a href="#specifications">Spécifications</a>
+        <a href="#objectifs">Objectifs</a>
+        <a href="#fonctions">Fonctions</a>
+        <a href="#variants">Variantes</a>
+        <a href="#cadre">Cadre</a>
+        <a href="#customization">Personnalisation</a>
+        <a href="#client-section">Contact</a>
+      </div>
+      <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+  <main>
+    <section id="presentation" class="section">
+      <h1>Présentation Générale du CRB100 (2024-2025)</h1>
+      <div class="info-card">
+        <h2>Description</h2>
+        <p>En raison de ses performances et de sa flexibilité, le CRB100 suscite un intérêt croissant dans les secteurs
+          industriels. Ce compresseur est particulièrement adapté aux environnements d'apprentissage, notamment :</p>
+        <ul class="feature-list">
+          <li>Les établissements d'enseignement technique</li>
+          <li>Les centres de formation</li>
+          <li>Les lycées professionnels</li>
+        </ul>
+        <p class="eco-note">Dans le cadre de la transition vers des technologies plus écologiques, le CRB100 répond aux
+          exigences de performance énergétique tout en se conformant aux nouvelles normes environnementales.</p>
+
+        <!-- Features section -->
+        <div class="features">
+          <div class="feature">
+            <div class="icon-container">
+              <i class="fas fa-ruler-combined"></i>
+            </div>
+            <h3>Dimensions</h3>
+            <p>800 x 600 x 650 mm</p>
+          </div>
+          <div class="feature">
+            <div class="icon-container">
+              <i class="fas fa-weight-hanging"></i>
+            </div>
+            <h3>Poids</h3>
+            <p>30 kg</p>
+          </div>
+          <div class="feature">
+            <div class="icon-container">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>Puissance</h3>
+            <p>136 W à -10°C</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="specifications" class="section">
+      <h2>Spécifications Techniques</h2>
+
+      <!-- Component Viewer -->
+      <div class="component-viewer">
+        <div class="component-image">
+          <img src="./image4.PNG" alt="Compresseur CRB100" id="mainImage" />
+          <div class="hotspots">
+            <div class="hotspot" data-spot="compressor" style="top: 30%; left: 50%">
+              <div class="hotspot-dot"></div>
+              <div class="hotspot-tooltip">
+                <h4>Compresseur Principal</h4>
+                <p>Puissance: 136W à -10°C<br>Résistance principale: 21Ω<br>Résistance démarrage: 38Ω</p>
+              </div>
+            </div>
+            <div class="hotspot" data-spot="filter" style="top: 60%; left: 30%">
+              <div class="hotspot-dot"></div>
+              <div class="hotspot-tooltip">
+                <h4>Filtre Déshydrateur</h4>
+                <p>Pression max: 46 Bar<br>Grande capacité de filtration</p>
+              </div>
+            </div>
+            <div class="hotspot" data-spot="valve" style="top: 45%; left: 70%">
+              <div class="hotspot-dot"></div>
+              <div class="hotspot-tooltip">
+                <h4>Vanne BP</h4>
+                <p>Contrôle précis: 0-30 Bar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image-controls">
+          <button id="zoomIn"><i class="fas fa-search-plus"></i></button>
+          <button id="zoomOut"><i class="fas fa-search-minus"></i></button>
+          <button id="resetZoom"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <!-- Image Slider -->
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide"><img src="./image1.PNG" alt="Image 1"></div>
+          <div class="slide"><img src="./image5.jpg" alt="Image 5"></div>
+          <div class="slide"><img src="./image2.PNG" alt="Image 2"></div>
+          <div class="slide"><img src="./image3.PNG" alt="Image 3"></div>
+        </div>
+        <div class="slider-controls">
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+        </div>
+      </div>
+
+      <!-- Specifications Cards -->
+      <div class="specs-container">
+        <div class="spec-card">
+          <div class="icon-container">
+            <i class="fas fa-plug"></i>
+          </div>
+          <h3>Électrique</h3>
+          <ul>
+            <li>Tension nominale: 230V ±10%</li>
+            <li>Tension min: 110V</li>
+            <li>Tension max: 254V</li>
+            <li>Fréquence: 50 Hz ±5%</li>
+            <li>Courant nominal: 6A</li>
+            <li>Plage voltmètre: 70-265V</li>
+          </ul>
+        </div>
+        <div class="spec-card">
+          <div class="icon-container">
+            <i class="fas fa-thermometer-half"></i>
+          </div>
+          <h3>Température</h3>
+          <ul>
+            <li>Ambiante: 32-35°C</li>
+            <li>Max: 43°C</li>
+            <li>Surchauffe max: 46°C</li>
+          </ul>
+        </div>
+        <div class="spec-card">
+          <div class="icon-container">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <h3>Pression</h3>
+          <ul>
+            <li>Plage BP: 0-30 Bar</li>
+            <li>Max système: 46 Bar</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="objectifs" class="section">
+      <h2>Objectifs Pédagogiques</h2>
+      <div class="objectives-grid">
+        <div class="objective-card">
+          <i class="fas fa-tools"></i>
+          <h3>Pratique Technique</h3>
+          <p>Permettre aux étudiants de s'exercer au câblage et à la mise en route d'un compresseur hermétique.</p>
+        </div>
+        <div class="objective-card">
+          <i class="fas fa-brain"></i>
+          <h3>Développement des Compétences</h3>
+          <p>Développer des compétences techniques dans les domaines des compresseurs et de la réfrigération.</p>
+        </div>
+        <div class="objective-card">
+          <i class="fas fa-book-reader"></i>
+          <h3>Compréhension Pratique</h3>
+          <p>Favoriser une compréhension pratique des systèmes de réfrigération.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fonctions" class="section">
+      <h2>Fonctions et Critères</h2>
+      <div class="functions-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Fonction</th>
+              <th>Critère d’appréciation</th>
+              <th>Niveau d’exigence</th>
+              <th>Flexibilité</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dimensionner le compresseur frigorifique</td>
+              <td>Longueur <br>Largeur<br>Hauteur<br>Masse</td>
+              <td>800 cm <br>600cm<br> 650 cm <br>30 Kg</td>
+              <td>F0</td>
+            </tr>
+            <tr>
+              <td>S'adapter au réseau électrique d'alimentation</td>
+              <td>Tension d’alimentation<br>Fréquence</td>
+              <td> 230V ±10% <br> 50 Hz ±5%</td>
+              <td>F1</td>
+            </tr>
+            <tr>
+              <td>Mesurer la température en amont du compresseur</td>
+              <td>Température ambiante:</td>
+              <td>32-35°C</td>
+              <td>F1</td>
+            </tr>
+            <tr>
+              <td>Mesurer la pression en amont du compresseur</td>
+              <td>Pression</td>
+              <td>0-30 Bar</td>
+              <td>F1</td>
+            </tr>
+            <tr>
+              <td>Filtrer et déshydrater les fluides frigorigènes</td>
+              <td>Pression max<br>Capacité</td>
+              <td>46 Bar <br> Grande</td>
+              <td>F0</td>
+            </tr>
+            <tr>
+              <td>Démarrer le compresseur</td>
+              <td>Résistance enroulement principal<br>Résistance démarrage<br>Relais de tension</td>
+              <td> 21 Ω <br> 38 Ω <br> 230V ±10%</td>
+              <td>F0</td>
+            </tr>
+            <tr>
+              <td>Ouvrir la vanne manuelle de basse pression (BP)</td>
+              <td>Pression/Température basse</td>
+              <td>—</td>
+              <td>F0</td>
+            </tr>
+            <tr>
+              <td>Compresser le gaz à l'aide du compresseur</td>
+              <td>Pression basse</td>
+              <td>—</td>
+              <td>F0</td>
+            </tr>
+            <tr>
+              <td>Refroidir le liquide par condensation</td>
+              <td>Pression<br>Tension nominale<br>Courant nominal</td>
+              <td>Basse <br> 230V <br> 2A</td>
+              <td>F1</td>
+            </tr>
+            <tr>
+              <td>Surveiller une surchauffe excessive</td>
+              <td>Température ambiante max</td>
+              <td>43 °C</td>
+              <td>F0</td>
+            </tr>
+            <tr>
+              <td>Faciliter l'intervention de maintenance</td>
+              <td>Maintenance préventive<br>Maintenance corrective</td>
+              <td>Outillage réduit <br> Notice d'instructions</td>
+              <td>F1</td>
+            </tr>
+            <tr>
+              <td>Surveiller la tension et l'intensité</td>
+              <td>Valeur voltmètre</td>
+              <td>70-265V</td>
+              <td>F1</td>
+            </tr>
+            <tr>
+              <td>Couper l'alimentation en cas de surcharge</td>
+              <td>Température max<br>Courant</td>
+              <td>46 °C <br> 6A</td>
+              <td>F0</td>
+            </tr>
+            <tr>
+              <td>Indiquer si le système est sous tension</td>
+              <td>Tension</td>
+              <td>230V ±10%</td>
+              <td>F1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <section id="variants" class="section">
+      <h2>Variantes et Solutions</h2>
+      <div class="variants-grid">
+        <div class="variant-card" data-problem="energy">
+          <h3><i class="fas fa-bolt"></i> Gestion Énergétique</h3>
+          <p>Système intelligent pour optimiser la consommation et réduire les coûts lors des pics</p>
+        </div>
+        <div class="variant-card" data-problem="heat">
+          <h3><i class="fas fa-temperature-high"></i> Refroidissement</h3>
+          <p>Système de refroidissement liquide pour prévenir la surchauffe</p>
+        </div>
+        <div class="variant-card" data-problem="noise">
+          <h3><i class="fas fa-volume-mute"></i> Insonorisation</h3>
+          <p>Matériaux insonorisants pour réduire le bruit à pleine capacité</p>
+        </div>
+        <div class="variant-card" data-problem="durability">
+          <h3><i class="fas fa-shield-alt"></i> Protection</h3>
+          <p>Revêtements anticorrosion pour environnements agressifs</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cadre" class="section">
+      <h2>Cadre de Réponse</h2>
+      <div class="response-framework">
+        <div class="framework-card">
+          <h3><i class="fas fa-file-contract"></i> Garanties</h3>
+          <ul>
+            <li>Garanties sur délais et qualité</li>
+            <li>Pénalités en cas de retard</li>
+            <li>Service après-vente complet</li>
+          </ul>
+        </div>
+        <div class="framework-card">
+          <h3><i class="fas fa-calendar-alt"></i> Planning</h3>
+          <ul>
+            <li>Calendrier détaillé des étapes</li>
+            <li>Délais de livraison précis</li>
+            <li>Responsabilités définies</li>
+          </ul>
+        </div>
+        <div class="framework-card">
+          <h3><i class="fas fa-money-bill-wave"></i> Paiement</h3>
+          <ul>
+            <li>Paiements échelonnés</li>
+            <li>Flexibilité des modalités</li>
+            <li>Conditions transparentes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="customization" class="section">
+      <h2>Personnalisation pour les Clients</h2>
+      <form id="customizationForm" class="info-card">
+        <label for="Type d'Usage"> Type D'usage:</label>
+        <select id="usage" name="usage">
+          <option value="pedagogique">Pédagogique</option>
+          <option value="indus">Industriel</option>
+        </select>
+        <!-- Physical Dimensions -->
+        <label for="dimensions">Dimensions (L x W x H) [mm]:</label>
+        <input type="text" id="dimensions" name="dimensions" placeholder="800 x 600 x 650" required />
+
+        <label for="weight">Poids (kg):</label>
+        <input type="number" id="weight" name="weight" placeholder="30" required />
+
+        <!-- Electrical Specifications -->
+        <label for="voltage">Tension nominale (V):</label>
+        <input type="number" id="voltage" name="voltage" placeholder="230" required />
+
+        <label for="frequency">Fréquence (Hz):</label>
+        <input type="number" id="frequency" name="frequency" placeholder="50" required />
+
+        <label for="current">Courant nominal (A):</label>
+        <input type="number" id="current" name="current" placeholder="6" required />
+
+        <!-- Performance Metrics -->
+        <label for="power">Puissance (W):</label>
+        <input type="number" id="power" name="power" placeholder="136" required />
+
+        <label for="temperature">Plage de Température (°C):</label>
+        <input type="text" id="temperature" name="temperature" placeholder="32-35" required />
+
+        <label for="resistance">Résistance (Ω):</label>
+        <input type="text" id="resistance" name="resistance" placeholder="21 (principal), 38 (démarrage)" required />
+
+        <!-- Refrigerant System Features -->
+        <label for="pressure">Plage de Pression BP (Bar):</label>
+        <input type="text" id="pressure" name="pressure" placeholder="0-30" required />
+
+        <label for="maxPressure">Pression Maximale (Bar):</label>
+        <input type="number" id="maxPressure" name="maxPressure" placeholder="46" required />
+
+        <!-- Material and Durability -->
+        <label for="coating">Revêtement anticorrosion:</label>
+        <select id="coating" name="coating">
+          <option value="standard">Standard</option>
+          <option value="enhanced">Renforcé</option>
+        </select>
+
+        <label for="noiseReduction">Réduction de bruit:</label>
+        <select id="noiseReduction" name="noiseReduction">
+          <option value="none">Aucune</option>
+          <option value="basic">De base</option>
+          <option value="advanced">Avancée</option>
+        </select>
+
+        <!-- Energy Efficiency -->
+        <label for="energyManagement">Gestion Énergétique:</label>
+        <select id="energyManagement" name="energyManagement">
+          <option value="basic">De base</option>
+          <option value="smart">Intelligente</option>
+        </select>
+
+        <label for="coolingSystem">Système de Refroidissement:</label>
+        <select id="coolingSystem" name="coolingSystem">
+          <option value="air">Par air</option>
+          <option value="liquid">Par liquide</option>
+        </select>
+
+        <!-- Maintenance -->
+        <label for="maintenanceTools">Outils de Maintenance:</label>
+        <select id="maintenanceTools" name="maintenanceTools">
+          <option value="standard">Standard</option>
+          <option value="reduced">Réduits</option>
+        </select>
+
+        <label for="documentation">Documentation:</label>
+        <select id="documentation" name="documentation">
+          <option value="basic">De base</option>
+          <option value="enhanced">Améliorée</option>
+        </select>
+
+        <!-- Aesthetics -->
+        <label for="color">Couleur préférée:</label>
+        <input type="color" id="color" name="color" value="#3498db" />
+        <span id="color-display"
+          style="display: inline-block; width: 30px; height: 30px; margin-left: 1rem; border: 1px solid var(--secondary-color); background-color: #3498db;"></span>
+
+
+        <label for="additionalNotes">Notes supplémentaires:</label>
+        <textarea id="additionalNotes" name="additionalNotes" rows="4"
+          placeholder="Ajouter vos remarques ici..."></textarea>
+
+        <button type="submit" class="theme-toggle">Envoyer</button>
+      </form>
+    </section>
+
+
+    <section id="diagramme-fonctionnel" class="section">
+      <h2>Diagramme Fonctionnel</h2>
+      <!-- Embed Unity WebGL as an iframe -->
+      <div id="unity-webgl-container">
+        <iframe 
+          src="./test2 diagram/index.html" 
+          width="100%" 
+          height="600" 
+          frameborder="0" 
+          allowfullscreen="true">
+        </iframe>
+      </div>
+      <button id="download-content" class="download-btn">Télécharger en Image</button>
+    </section>
+    
+    
+    
+
+
+
+
+    <section id="client-section" class="section">
+      <h2>Formulaire de Contact</h2>
+      <p class="form-intro">
+        Merci de remplir ce formulaire pour partager vos plaintes, demandes ou messages avec nous. Votre retour est
+        important pour améliorer nos services.
+      </p>
+
+      <form id="client-form">
+        <div id="formPage1" class="info-card">
+          <label for="choice">Type de message:</label>
+          <select id="choice" name="choice" required>
+            <option value="" disabled selected>Choisissez une option</option>
+            <option value="complaint">Plainte</option>
+            <option value="request">Demande/Question</option>
+            <option value="simpleMessage">Message simple</option>
+          </select>
+
+          <label for="firstName">Prénom:</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Entrez votre prénom" required />
+
+          <label for="lastName">Nom:</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Entrez votre nom" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Entrez votre email" required />
+
+          <button type="button" id="nextButton" class="theme-toggle" disabled>Suivant</button>
+        </div>
+
+        <div id="formPage2" class="info-card" style="display: none;">
+          <div id="additionalFields">
+            <!-- Additional fields are dynamically added here -->
+          </div>
+          <button type="button" id="backButton" class="theme-toggle">Retour</button>
+          <button type="submit" id="submitButton" class="theme-toggle">Envoyer</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>À propos</h3>
+        <p>CRB100 est leader dans la fabrication de compresseurs innovants pour l'industrie et l'éducation.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Liens rapides</h3>
+        <div class="footer-links">
+          <a href="#specifications">Spécifications</a>
+          <a href="#customization">Personnalisation</a>
+          <a href="#client-section">Contact</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <div class="footer-links">
+          <a href="tel:+33123456789">+216 12345678</a>
+          <a href="mailto:contact@crb100.com">contact@crb100.com</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Suivez-nous</h3>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
